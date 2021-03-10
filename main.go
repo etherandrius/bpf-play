@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	mod := elf.NewModule("bpf_prog/kprobe_example.o")
+	mod := elf.NewModule("ebpf/kprobe_example.o")
 
 	err := mod.Load(nil)
 	if err != nil {
